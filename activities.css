@@ -2,7 +2,7 @@
     position: relative;
     margin-top: -90px;
     padding-top: 90px;
-    height: calc(180vh + 200px);
+    min-height: calc(180vh + 200px);
     background-color: #1b5574;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

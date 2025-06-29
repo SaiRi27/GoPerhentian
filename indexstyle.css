@@ -63,16 +63,7 @@
     z-index: 5;
     
 }
-.div2 .container1:after{
-    content: '';
-    position: absolute;
-    top: 28%; left: 12%;
-    width: 70%;
-    height: 4px;
-    background-color: #eeeacc;
-    border-radius: 1px;
-    
-}
+
 
 
 .div2 .container2{
@@ -132,16 +123,7 @@
     text-align: justify;
 }
 
-.div3 .container2:after{
-    content: '';
-    position: absolute;
-    top: 20%; left: 12%;
-    width: 70%;
-    height: 4px;
-    background-color: #eeeacc;
-    border-radius: 1px;
-    
-}
+
 
 .div5{
     display: grid;

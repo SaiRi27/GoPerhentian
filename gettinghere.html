@@ -1,0 +1,134 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="navbar.css" />
+<link rel="stylesheet" href="gettinghere.css" />
+<script src="animation.js"></script>
+
+<title> GoPerhentian | Getting here </title>
+<link rel="shortcut icon" href="images/icongo.png"/>
+</head>
+
+<body>
+
+<div class="navcontainer">
+    <a href="index.html"> <img src="images/icongo.png"> </a> 
+    <div>   
+        <a href="index.html"> Home </a>
+        <a href="activities.html"> Activities </a>
+        <a href="packages.html"> Packages </a>
+        <a href="gettinghere.html"> Getting Here </a>
+        <a href="gallery.html"> Gallery </a>
+        <a href="index.html#div7"> Contact us </a>
+    </div> 
+</div>
+<div class="div2 division2">
+    <div class="img">
+    </div>
+    <div class="title">
+        <h1> Getting Here </h1>
+        <p style="color:white;"> Select your preferred travel method </p>
+    </div>
+</div>
+
+<div class="div3">
+    <p> Perhentian Island is accessible from the small coastal town of Kuala Besut, located between Kota Bharu (Kelantan) and Kuala Terengganu (Terengganu).</p>
+
+    <p>The Kuala Besut Jetty is the official departure point for all boats heading to Perhentian. It’s easily reachable via plane, train, coach, or private car.</p>
+
+</div>
+<div class="division div1">
+  <h1>Getting to Pulau Perhentian</h1>
+
+  <div class="tabs">
+    <div class="tab active plane" onclick="showContent('plane')"></div>
+    <div class="tab train" onclick="showContent('train')"></div>
+    <div class="tab coach" onclick="showContent('coach')"></div>
+    <div class="tab car" onclick="showContent('car')"></div>
+    <div class="tab boat" onclick="showContent('boat')"></div>
+    <div class="tab map" onclick="showContent('map')"></div>
+  </div>
+
+  <div id="plane" class="content active">
+    <h2>✈️ By Plane</h2>
+    <p>Fly to the Nearest Airports.<br>
+The fastest way to reach Pulau Perhentian is by air. The two closest airports are:<br>
+ • Kota Bharu Airport (KBR) – about 1 hour drive to Kuala Besut Jetty <br>
+ • Kuala Terengganu Airport (TGG) – about 1.5 hours drive to the jetty
+</p>
+    <div class="tip">✈️ Tips: Choose morning flights so you have time to catch the last boat to the island, usually at 4:00 PM.</div>
+  </div>
+
+  <div id="train" class="content">
+    <h2>🚆 By Train</h2>
+    <p>Ride KTM Intercity to the East Coast <br>
+If you enjoy scenic travel, you can take the KTM Intercity train from major cities to one of these two stations:<br>
+ • Tanah Merah Station – around 45 minutes drive to the jetty<br>
+ • Wakaf Bharu Station – around 1 hour drive to the jetty</p>
+    <div class="tip">🚆 Tips: Book your train early if you're traveling during holidays or weekends.</div>
+  </div>
+
+  <div id="coach" class="content">
+    <h2>🚌 By Coach / Bus</h2>
+    <p>
+Comfortable and Affordable<br>
+Long-distance coaches are available from:<br>
+ • Kuala Lumpur – ~8 hours
+ • Penang – ~9 hours
+ • Johor Bahru – 10+ hours</p>
+    <div class="tip">🚌 Tips: Take a night bus so you arrive early enough to catch the first boat in the morning.</div>
+  </div>
+
+  <div id="car" class="content">
+    <h2>🚗 By Car</h2>
+    <p>
+Flexible and Convenient <br>
+Driving to Kuala Besut Jetty is a great option if you're traveling with family or friends. Simply use Google Maps or Waze and set your destination to Kuala Besut Jetty. <br>
+Parking is available near the jetty area, typically costing around RM10–15 per day.</p>
+    <div class="tip">🚗 Tips: Aim to arrive before 3:30 PM to catch the last boat of the day.</div>
+  </div>
+
+  <div id="boat" class="content">
+    <h2>🚤 By Boat (Jetty Transfer) </h2>
+    <p>
+Speedboat from Kuala Besut Jetty<br>
+All visitors to Perhentian Island must take a boat from Kuala Besut Jetty. Boats operate daily and the journey takes 30–45 minutes depending on weather and sea conditions.<br>
+Boat Schedule (Subject to change):<br>
+ • First boat: 8:00 AM <br>
+ • Last boat: 4:00 PM</p>
+    <div class="tip">⚠️ Important: There are no boat services after 4 PM. Plan your arrival accordingly.</div>
+  </div>
+
+<div id="map" class="content">
+  <h2>🗺️ Map</h2>
+  <div id="googleMap" style="max-width: 800px; height: 300px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;"></div>
+</div>
+<script>
+  function showContent(id) {
+    const tabs = document.querySelectorAll('.tab');
+    const contents = document.querySelectorAll('.content');
+
+    tabs.forEach(tab => tab.classList.remove('active'));
+    contents.forEach(content => content.classList.remove('active'));
+
+    document.querySelector(`.tab[onclick*="${id}"]`).classList.add('active');
+    document.getElementById(id).classList.add('active');
+  }
+
+  function myMap() {
+    var mapProp = {
+      center: new google.maps.LatLng(5.9121, 102.7312),
+      zoom: 13, 
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+  }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWJlQawnU2pTe0TcsJvqVhGyGQWPcN2yo&callback=myMap" async defer></script>
+
+
+
+</body>
+</html>

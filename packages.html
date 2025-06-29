@@ -1,0 +1,139 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family-Caveat&display-swap" rel="stylesheet">
+
+<link rel="stylesheet" href="navbar.css" />
+<link rel="stylesheet" href="packagesstyle.css" />
+<script src="animation.js"></script>
+
+<title> GoPerhentian | Packages </title>
+<link rel="shortcut icon" href="images/icongo.png"/>
+</head>
+
+<body>
+
+<div class="navcontainer">
+    <a href="index.html"> <img src="images/icongo.png"> </a> 
+    <div>   
+        <a href="index.html"> Home </a>
+        <a href="activities.html"> Activities </a>
+        <a href="packages.html"> Packages </a>
+        <a href="gettinghere.html"> Getting Here </a>
+        <a href="gallery.html"> Gallery </a>
+        <a href="index.html#div7"> Contact us </a>
+    </div> 
+</div>
+
+<div class="div1 division">
+  <h1 class="title">Packages</h1>
+
+  <div class="card">
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="front packages">
+          <img src="images/fam.png" />
+          <h1>Family Fun Package</h1>
+          <div>
+            <button onclick="window.alert('The package has been booked')">book now</button>
+            <a href="#" class="view-details">View details</a>
+          </div>
+        </div>
+        <div class="back packages">
+          <h1><b>Details</b></h1>
+          <p>Enjoy sun, sea, and endless fun with our exciting family-friendly package designed for all ages! Whether you're looking to relax by the beach or enjoy thrilling outdoor activities, this is the perfect short vacation for you and your loved ones. (4-6 person)</p>
+          <p>2 day 1 night: RM250 – RM600  <br>  3 day 2 night: RM500 – RM1200 </p>
+          <button class="close-btn">×</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="front packages">
+          <img src="images/student (1).png" />
+          <h1>Student Package</h1>
+          <div>
+            <button onclick="window.alert('The package has been booked')">book now</button>
+            <a href="#" class="view-details">View details</a>
+          </div>
+        </div>
+        <div class="back packages">
+          <h1><b>Details</b></h1>
+          <p>Need a break from assignments and classes? This is the perfect budget-friendly escape for you and your friends! Whether you're into beach vibes, bonding time, or just looking for something exciting to do, this package is made for students who want to have fun without breaking the bank.</p>
+          <p>2 day 1 night: RM80–RM150 <br>  3 day 2 night: RM150–RM250 </p>
+          <button class="close-btn">×</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="front packages">
+          <img src="images/luxury (1).png" />
+          <h1>Luxury Package</h1>
+          <div>
+            <button onclick="window.alert('The package has been booked')">book now</button>
+            <a href="#" class="view-details">View details</a>
+          </div>
+        </div>
+        <div class="back packages">
+          <h1><b>Details</b></h1>
+          <p>in the perfect blend of relaxation and adventure with our thoughtfully curated luxury package — designed for families who enjoy the finer things in life. From pristine beachfront views to exclusive activities, every detail is crafted to ensure an unforgettable escape filled with joy, comfort, and lasting memories.</p>
+          <p>2 day 1 night: RM800–RM1,500  <br>  3 day 2 night: RM1,500–RM3,000+ </p>
+          <button class="close-btn">×</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="flip-card">
+      <div class="flip-inner">
+        <div class="front packages">
+          <img src="images/solo.png" />
+          <h1>Solo Traveler Package</h1>
+          <div>
+            <button onclick="window.alert('The package has been booked')">book now</button>
+            <a href="#" class="view-details">View details</a>
+          </div>
+        </div>
+        <div class="back packages">
+          <h1><b>Details</b></h1>
+          <p>Whether you're looking to relax by the sea, explore hidden gems, or just escape the noise of everyday life, this trip offers the ideal blend of freedom, fun, and discovery. Enjoy the beach at your own pace, try out exciting activities, and make unforgettable memories.</p>
+          <p>2 day 1 night: RM100–RM250  <br>  3 day 2 night: RM200–RM400 </p>
+          <button class="close-btn">×</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+    <p style="text-align: center;"> Copyrights © 2024 GoPerhentian. All rights reserved. Developed by <img src="images/8.png" alt="group8" style="height: 40%; width: auto; position: relative ; top: 10px;"></p>
+</footer>
+<script>
+document.querySelectorAll('.view-details').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const flipCard = this.closest('.flip-card');
+    flipCard.classList.add('flipped');
+  });
+});
+
+document.querySelectorAll('.close-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const flipCard = this.closest('.flip-card');
+    flipCard.classList.remove('flipped');
+  });
+});
+</script>
+
+</body>
+</html>

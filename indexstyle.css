@@ -227,7 +227,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(8, 48, 128);
+    background-color: #1b5574;
 }
 .div6 h1{
     animation: viewappear;
@@ -260,7 +260,7 @@
 
 }
 .div7{
-    background-color: rgb(8, 48, 128);
+    background-color: #1b5574;
     margin-top: -60px;
 }
 

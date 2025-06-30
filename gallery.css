@@ -67,7 +67,8 @@
 
 figure{
     height: 350px;
-    width: 320px;
+    width: auto;
+    max-width: 320px;
     padding:15px;
     background-color: white;
     position:relative;

@@ -1,5 +1,6 @@
 
 .div1{
+    width:100%;
     display:flex;
     position:relative;
     margin-top: -90px;
@@ -49,6 +50,7 @@
     }
 }
 .div2{
+    width: 100%;
     z-index: 10;
     position: relative;
     place-items: center;
